@@ -9,27 +9,8 @@ namespace Infrastructure.Data
         { }
 
         public DbSet<Product> Products { get; set; }
+        public DbSet<ProductBrand> ProductBrands { get; set; }
+        public DbSet<ProductType> ProductTypes { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder builder)
-        {
-            base.OnModelCreating(builder);
-
-            builder.Entity<Product>().HasData(
-                new Product
-                {
-                    Id = 1,
-                    Name = "Product one"
-                },
-                new Product
-                {
-                    Id = 2,
-                    Name = "Product two"
-                },
-                new Product
-                {
-                    Id = 3,
-                    Name = "Product three"
-                });
-        }
     }
 }
