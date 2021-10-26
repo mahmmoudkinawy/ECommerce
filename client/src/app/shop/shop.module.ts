@@ -6,6 +6,6 @@ import { ProductItemComponent } from './product-item/product-item.component';
 @NgModule({
   declarations: [ShopComponent, ProductItemComponent],
   imports: [CommonModule],
-  exports: [ShopComponent, ProductItemComponent],
+  exports: [ShopComponent],
 })
 export class ShopModule {}
